@@ -10,7 +10,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 15.x
       - name: Cache node modules
         uses: actions/cache@v1
         with:
@@ -20,11 +20,7 @@ jobs:
         run: >
           npm install -g hexo-cli
           npm install
-          # Restore last modified time
-          git ls-files -z | while read -d '' path; do touch -d "$(git log -1
-          --format="@%ct" "$path")" "$path"; done
-          hexo g
-          rm -rf ./public/CNAME
+          hexo generate
           echo "blog.lp.rdpstudio.top" >> ./public/CNAME
           ls public
       - name: Deploy
