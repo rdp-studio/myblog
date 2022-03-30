@@ -19,13 +19,14 @@ jobs:
       - name: Install & Build
         run: >
           npm install -g hexo-cli
-          npm i
+          npm install
           # Restore last modified time
           git ls-files -z | while read -d '' path; do touch -d "$(git log -1
           --format="@%ct" "$path")" "$path"; done
           hexo g
           rm -rf ./public/CNAME
           echo "blog.lp.rdpstudio.top" >> ./public/CNAME
+          ls public
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
