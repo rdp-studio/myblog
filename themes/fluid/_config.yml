@@ -215,10 +215,6 @@ custom_head: |
    const el = document.createElement('pwa-update');
    document.body.appendChild(el);
   </script>
-
-# 自定义底部 HTML 内容（位于 footer 上方），注意不要和 `post: custom` 配置冲突
-# Customize the HTML content at the bottom (located above the footer), be careful not to conflict with `post: custom`
-custom_html: |
   <script>
   (function(window,document,undefined){
 			var hearts = [];
@@ -287,6 +283,10 @@ custom_html: |
 			}
 		})(window,document);
   </script>
+
+# 自定义底部 HTML 内容（位于 footer 上方），注意不要和 `post: custom` 配置冲突
+# Customize the HTML content at the bottom (located above the footer), be careful not to conflict with `post: custom`
+custom_html: ""
 
 # 网页访问统计
 # Analysis of website visitors
