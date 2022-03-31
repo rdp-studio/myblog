@@ -322,7 +322,7 @@ navbar:
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "说说", link: "/talk/", icon: "iconfont icon-archive-fill" }
-    - { key: "管理", link: "/hpp/admin/login", icon: "iconfont icon-user-fill" }
+    - { key: "管理", link: "/hpp/admin/dash/home", icon: "iconfont icon-user-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
