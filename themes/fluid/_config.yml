@@ -597,27 +597,8 @@ post:
   # 版权声明，会显示在每篇文章的结尾
   # Copyright, will be displayed at the end of each post
   copyright:
-    enable: true
-
-    # CC license
-    # Options: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND
-    license: 'BY-SA'
-
-    # 显示作者
-    author:
-      enable: true
-
-    # 显示发布日期
-    # Show post date
-    post_date:
-      enable: true
-      format: "LL"
-
-    # 显示更新日期
-    # Show update date
-    update_date:
-      enable: false
-      format: "LL"
+    enable: false
+    content: ""
 
   # 文章底部上一篇下一篇功能
   # Link to previous/next post
