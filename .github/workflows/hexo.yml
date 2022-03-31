@@ -1,9 +1,8 @@
 name: LaunchPadのHexoBlogBuild
 on:
-  - workflow_dispatch
-  - push:
-      branches:
-        - main
+  push:
+    branches: [ main ]
+  workflow_dispatch:
 jobs:
   buildstatic:
     runs-on: ubuntu-latest
