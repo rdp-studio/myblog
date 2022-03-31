@@ -43,4 +43,4 @@
 
 ## 特别预览和参考
 
-本站经过定制，加入了某些你可能不需要的东西（比如说HexoPlusPlus、Live2d等等），以及魔改了一些私有的东西，这些东西需要经过比较复杂的配置【或完全脱离了配置】，不能直接拿来使用，所以你可以预览和参考，但是如果想自己建造博客，请你最好还是安装[Fluid主题](https://github.com/fluid-dev/hexo-theme-fluid)
+本站经过定制，加入了某些你可能不需要的东西（比如说Service Worker、HexoPlusPlus、Live2d等等），以及魔改了一些私有的东西，这些东西需要经过比较复杂的配置【或完全脱离了配置】，不能直接拿来使用，所以你可以预览和参考，但是如果想自己建造博客，请你最好还是安装[Fluid主题](https://github.com/fluid-dev/hexo-theme-fluid)

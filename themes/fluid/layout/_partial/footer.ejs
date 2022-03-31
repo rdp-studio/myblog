@@ -15,7 +15,36 @@
 <div id="live2d" class="live2d">
     <canvas id="live2dm" class="live2d" style="z-index: 999!important;"></canvas>
 </div>
-<script src="https://npm.elemecdn.com/chenyfan-oss@2.0.3"></script>
+<script>
+  document.getElementById("liveswitch").addEventListener("click", function() {
+    document.getElementById("live2d") || notyf.error("找不到模型，请使用电脑浏览"),
+    "false" != window.localStorage.getItem("LPBlogLive2D") ? (window.localStorage.setItem("LPBlogLive2D", "false"),
+    document.getElementById("live2d").style.display = "none",
+    notyf.success("Live2D 已关闭")) : (window.localStorage.setItem("LPBlogLive2D", "true"),
+    notyf.success("Live2D 已开启")),
+    setTimeout(()=>{
+        window.location.reload()
+    }
+    , 1e3)
+}),
+setTimeout(()=>{
+    window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 3,
+        hoverDelay: 50
+    },
+    600 < document.body.clientWidth && "false" != window.localStorage.getItem("LPBlogLive2D") && loadScript("https://npm.elemecdn.com/chenyfan-os@0.0.0-r3/load.js", function() {
+        loadModel(),
+        document.getElementById("live2d").style.display = ""
+    })
+}
+, 0),
+document.onreadystatechange = function() {
+    "complete" == document.readyState && (loadScript("https://npm.elemecdn.com/chenyfan-os@0.0.0-r1/lazyload.min.js", function() {}),
+    loadScript("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", function() {}))
+}
+</script>
   <%- partial('_partial/statistics.ejs') %>
   <%- partial('_partial/beian.ejs') %>
   <% if(theme.web_analytics.cnzz) { %>
