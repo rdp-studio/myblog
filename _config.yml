@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 启动台の博客(￣▽￣)"
+title: 启动台の博客
 subtitle: (｡･∀･)ﾉﾞ嗨
 description: "挣扎在互联网角落的小小博客，喜欢介绍一些普通的知识"
 keywords: BLOG,薅羊毛,技术,DNS,CDN,滑稽,图床
@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://blog.rdpstudio.top
+url: https://lpblog.rdpstudio.top
 permalink: :year/:month/:day/:title/
 #permalink: p/:abbrlink.html
 abbrlink:
