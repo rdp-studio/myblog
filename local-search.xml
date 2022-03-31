@@ -60,7 +60,7 @@
     <link href="/2019/03/31/hello-world/"/>
     <url>/2019/03/31/hello-world/</url>
     
-    <content type="html"><![CDATA[<p>你好，世界！本站于2019-03-31建立，于2022-03-31重建。</p>]]></content>
+    <content type="html"><![CDATA[<p>你好，世界！<del>本站于2019-03-31建立</del>，于2022-03-31<del>重建</del>很多文章都丢失了，相当于新站了。</p>]]></content>
     
     
     <categories>
