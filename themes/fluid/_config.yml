@@ -217,10 +217,9 @@ custom_head: |
   </script>
   <script type="module">
    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-   //const el = document.createElement('pwa-update');
-   //document.body.appendChild(el);
+   const el = document.createElement('pwa-update');
+   document.body.appendChild(el);
   </script>
-  <pwa-update showStorageEstimate="true"></pwa-update>
   <script>
   (function(window,document,undefined){
 			var hearts = [];
