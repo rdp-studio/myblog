@@ -6,6 +6,5 @@ categories:
 - 第一篇文章
 tags:
 - 第一篇文章
-- HelloWorld
 ---
 你好，世界！
