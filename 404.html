@@ -352,6 +352,19 @@
     <canvas id="live2dm" class="live2d" style="z-index: 999!important;"></canvas>
 </div>
 <script>
+  function loadScript(e, n) {
+    var t = document.createElement("script")
+      , o = document.getElementsByTagName("head")[0];
+    t.type = "text/javascript",
+    t.charset = "UTF-8",
+    t.src = e,
+    t.addEventListener ? t.addEventListener("load", function() {
+        n()
+    }, !1) : t.attachEvent && t.attachEvent("onreadystatechange", function() {
+        "loaded" == window.event.srcElement.readyState && n()
+    }),
+    o.appendChild(t)
+}
   document.getElementById("liveswitch").addEventListener("click", function() {
     document.getElementById("live2d") || notyf.error("找不到模型，请使用电脑浏览"),
     "false" != window.localStorage.getItem("LPBlogLive2D") ? (window.localStorage.setItem("LPBlogLive2D", "false"),
