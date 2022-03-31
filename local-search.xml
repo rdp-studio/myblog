@@ -11,6 +11,20 @@
     <content type="html"><![CDATA[<p>你好，世界！</p>]]></content>
     
     
+    <categories>
+      
+      <category>第一篇文章</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>第一篇文章</tag>
+      
+      <tag>HelloWorld</tag>
+      
+    </tags>
     
   </entry>
   
