@@ -212,11 +212,15 @@ custom_head: |
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="https://npm.elemecdn.com/notyf@3/notyf.min.css">
   <script src="https://npm.elemecdn.com/notyf@3.10.0/notyf.min.js"></script>
+  <script>
+   window.notyf=new Notyf;
+  </script>
   <script type="module">
    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-   const el = document.createElement('pwa-update');
-   document.body.appendChild(el);
+   //const el = document.createElement('pwa-update');
+   //document.body.appendChild(el);
   </script>
+  <pwa-update showStorageEstimate="true"></pwa-update>
   <script>
   (function(window,document,undefined){
 			var hearts = [];
