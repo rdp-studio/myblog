@@ -27,9 +27,10 @@ jobs:
           publish_dir: ./public
       - name: Update docs abbrlink
         run: |
-          git fetch --all
-          git reset --hard origin/main
-          git add .
+          rm -r node_modules
+          rm -r public
+          rm -f package-lock.json
+          git add source
           git diff HEAD --exit-code
           if [ "$EXCODE" != "0" ]; then  
              echo "No changes to commit!"
