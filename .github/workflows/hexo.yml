@@ -31,8 +31,8 @@ jobs:
           rm -r public
           rm -f package-lock.json
           git add source
-          git diff HEAD --exit-code
-          if [ "$EXCODE" != "0" ]; then  
+          git diff HEAD --exit-code || export STATCODE=$? || true
+          if [ "$STATCODE" == "0" ]; then  
              echo "No changes to commit!"
              exit 0
           else
