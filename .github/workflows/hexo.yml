@@ -25,3 +25,16 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+      - name: Update docs abbrlink
+        run: |
+          git add .
+          git diff HEAD --exit-code
+          if [ "$EXCODE" != "0" ]; then  
+             "No changes to commit!"
+          else
+            git config --global user.name "github-actions-blog[bot]"
+            git config --global user.email "noreply@rdpstudio.top"
+            git commit -m "[skip ci] Updated abbrlink from commit $env:GITHUB_SHA on $env:GITHUB_REF"
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+            git push origin main
+          fi
