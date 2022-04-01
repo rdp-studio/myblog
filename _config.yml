@@ -112,3 +112,10 @@ feed:
   type: atom
   path: atom.xml
   limit: 50
+
+# Security
+encrypt: # hexo-blog-encrypt
+  abstract: 有东西被加密了, 请输入密码查看。
+  message: 您好, 这里需要密码。
+  wrong_pass_message: 🤔, 这个密码看着不太对喔，请再试试？（密码好像很容易就能找到哇？）
+  wrong_hash_message: 🤔, 这个文章好像被篡改了唉？
