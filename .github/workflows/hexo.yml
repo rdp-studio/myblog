@@ -32,10 +32,9 @@ jobs:
           rm -f package-lock.json
           git add source
           git diff HEAD --exit-code
-          if [ git diff HEAD --exit-code ]
+          if [ $? -eq 0 ]
           then
               echo "No changes to commit!"
-              exit 0
           else
               git config --global user.name "github-actions-blog[bot]"
               git config --global user.email "noreply@rdpstudio.top"
