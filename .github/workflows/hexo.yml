@@ -30,7 +30,7 @@ jobs:
           git fetch --all
           git reset --hard origin/main
           git reset --hard origin/gh-pages
-          git add ./source/_posts/*
+          git add .
           git diff HEAD --exit-code
           if [ "$EXCODE" != "0" ]; then  
              "No changes to commit!"
