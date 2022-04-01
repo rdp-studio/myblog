@@ -8,6 +8,7 @@ tags:
   - 站长必备
 categories: 屌代码
 author: 启动台
+abbrlink: 7904cecd
 ---
 # 前言：
 用久了blog会感觉单调。
