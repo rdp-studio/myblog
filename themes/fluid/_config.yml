@@ -83,7 +83,7 @@ fun_features:
 
     # 打印速度，数字越大越慢
     # Typing speed, the larger the number, the slower
-    typeSpeed: 70
+    typeSpeed: 80
 
     # 游标字符
     # Cursor character
@@ -477,11 +477,9 @@ footer:
   content: '
     由强力的 <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> 驱动 | 
     <i class="iconfont icon-love"></i>
-    由可爱的 <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 支持 | 托管于 <a href="https://cloudflare.com">Cloudflare</a> 与 <a href="https://pages.github.com">Github Pages</a>
-    <br>
-    <span id="bloggeractivetime"></span><br>
+    由可爱的 <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 支持 | 托管于 <a href="https://cloudflare.com">Cloudflare</a> 与 <a href="https://pages.github.com">Github Pages</a> | <span id="bloggeractivetime"></span>
     <script src="/hpp/api/getblogeractive"></script>
-    <a href="https://icp.gov.moe/?keyword=20220466" target="_blank">萌ICP备20220466号</a><br>
+    <br><a href="javascript:clearcache()">清除缓存</a> | <a href="https://icp.gov.moe/?keyword=20220466" target="_blank">萌ICP备20220466号</a><br>
   '
 
   # 展示网站的 PV、UV 统计数
