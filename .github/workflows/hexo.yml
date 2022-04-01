@@ -31,14 +31,14 @@ jobs:
           rm -r public
           rm -f package-lock.json
           git add source
-          git diff HEAD --exit-code || export STATCODE=$? || true
-          if [ "$STATCODE" == "0" ]; then  
-             echo "No changes to commit!"
-             exit 0
+          git diff HEAD --exit-code
+          if git diff HEAD --exit-code then
+              echo "No changes to commit!"
+              exit 0
           else
-            git config --global user.name "github-actions-blog[bot]"
-            git config --global user.email "noreply@rdpstudio.top"
-            git commit -m "[skip ci] Updated abbrlink from commit $env:GITHUB_SHA on $env:GITHUB_REF"
-            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-            git push origin main
+              git config --global user.name "github-actions-blog[bot]"
+              git config --global user.email "noreply@rdpstudio.top"
+              git commit -m "[skip ci] Updated abbrlink"
+              git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+              git push origin main
           fi
