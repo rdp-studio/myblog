@@ -6,6 +6,7 @@
 [![Author](https://flat.badgen.net/badge/author/LaunchPad/)](https://space.bilibili.com/392383363)
 [![Blog](https://flat.badgen.net/badge/blog/LaunchPad%E3%81%AEBlog/orange/)](https://lpblog.rdpstudio.top/)
 [![Made with ❤](https://flat.badgen.net/badge/made%20with/%e2%9d%a4/ff69b4)](https://lpblog.rdpstudio.top/)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frdp-studio%2Fmyblog.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Frdp-studio%2Fmyblog?ref=badge_shield)
 
 </div>
 
@@ -44,3 +45,7 @@
 ## 特别预览和参考
 
 本站经过定制，加入了某些你可能不需要的东西（比如说Service Worker、HexoPlusPlus、Live2d等等），以及魔改了一些私有的东西，这些东西需要经过比较复杂的配置【或完全脱离了配置】，不能直接拿来使用，所以你可以预览和参考，但是如果想自己建造博客，请你最好还是安装[Fluid主题](https://github.com/fluid-dev/hexo-theme-fluid)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frdp-studio%2Fmyblog.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Frdp-studio%2Fmyblog?ref=badge_large)
