@@ -29,11 +29,10 @@ jobs:
         run: |
           git fetch --all
           git reset --hard origin/main
-          git reset --hard origin/gh-pages
           git add .
           git diff HEAD --exit-code
           if [ "$EXCODE" != "0" ]; then  
-             "No changes to commit!"
+             echo "No changes to commit!"
           else
             git config --global user.name "github-actions-blog[bot]"
             git config --global user.email "noreply@rdpstudio.top"
