@@ -34,6 +34,7 @@ jobs:
           git diff HEAD --exit-code
           if [ "$EXCODE" != "0" ]; then  
              echo "No changes to commit!"
+             exit 0
           else
             git config --global user.name "github-actions-blog[bot]"
             git config --global user.email "noreply@rdpstudio.top"
